@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=B612+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.character-list {
+    position: fixed;
+    color: #FFF4E0;
+    width: 38%;
+    height: 100%;
+    left: 25vh;
+    top: 10vh;
+}
+
+#wuplogoamaignorethisbirom-logo {
+    max-width: 128px;
+    max-height: 128px
+}
+
+.character-list-container {
+    position: absolute;
+    display: block;
+    padding: 3vh;
+    height: 100%;
+    width: 100%;
+}
+
+.character-list-container p {
+    margin: 0;
+}
+
+.character-list-title {
+    position:relative;
+    width: 50%;
+    height: 1%;
+    background-color: transparent;
+    padding-top: 1.5vh;
+    font-size: 1.8vh;
+    text-align: center;
+    padding-bottom: 1.8vh;
+    left: 22%;
+    top: 5%;
+    border-bottom: 4px solid #FFF4E0;
+
+}
+
+.character-list-block {
+    display: block;
+    padding-top: 10vh;
+}
+
+.character-box {
+    background-color: rgba(20, 20, 20, 0.959);
+    border-bottom: 2px solid #FFF4E0;
+    transition: ease 0.2s;
+    padding: 2vh;
+    margin-bottom: 2vh;
+}
+
+.character-box:hover {
+    background-color: #8D7688;
+    border-bottom: 4px solid #FFF4E0;
+}
+
+.character-icon {
+    margin-right: 2vh;
+    float: right;
+    font-size: 3vh;
+    margin-top: 0.6vh;
+}
+
+.character-box p {
+    margin: 0;
+    padding: 0;
+    line-height: 2.8;
+    font-weight: 600;
+}
+
+.selected {
+    background-color: #8D7688;
+    border-bottom: 4px solid #FFF4E0;
+}
+
+.character-list-buttons {
+    display: none;
+    position: fixed;
+    bottom: 2vh;
+    text-align: center;
+    left: 73vh;
+}
+
+.char-button {
+    padding: 1vh;
+    margin-bottom: 2vh;
+    font-size: 1.5vh;
+    font-weight: 600;
+    width: 30.5vh;
+    color: #FFF4E0;
+    outline: none;
+    border: none;
+    transition: 0.2s;
+}
+
+
+
+.char-button:focus {
+    outline: none;
+}
+
+#play {
+    display: none;
+    background-color: #4CAF50;
+    transition: all 0.2s ease;
+    text-align:center;
+}
+
+#play:hover {
+    background-color: #81C784;
+}
+
+#delete {
+    display: none;
+    background-color: #E53935;
+    transition: all 0.2s ease;
+    text-align:center;
+}
+
+#delete:hover {
+    background-color: #E57373;
+}
+
+#create {
+    display: none;
+    background-color: #4CAF50;
+    transition: all 0.2s ease;
+}
+
+#create:hover {
+    background-color: #81C784;
+}
+
+.character-creation {
+    left: 10.8vh;
+    background-color: transparent;
+    position: absolute;
+    height: 100%;
+    width: 44vh;
+    top: 12vh;
+    color: #FFF4E0;
+}
+
+.character-creation-container {
+    padding: 3vh;
+}
+
+.character-creation-title {
+    position:relative;
+    width: 50%;
+    height: 1%;
+    background-color: transparent;
+    padding-top: 1.5vh;
+    font-size: 1.8vh;
+    text-align: center;
+    padding-bottom: 1.8vh;
+    left: 26%;
+    top: 5%;
+    border-bottom: 1px solid rgba(241, 240, 237, 0.767);
+}
+
+.character-creation-form {
+    padding-left: 2.7vh;
+    padding-top: 5vh;
+}
+
+.character-input {
+    width: 30vh;
+    padding: 2vh;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1.8vh;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 2.5vh;
+    transition: ease 0.5s;
+    border-bottom: 2px solid #FFF4E0;
+    outline: none
+}
+
+.character-input:hover {
+    background-color: transparent;
+    transition: all 0.2s ease;
+    border-bottom: 2px solid #FFF4E0;
+    outline: none
+}
+
+.character-select {
+    width: 34vh;
+    padding: 2vh;
+    background-color: transparent;
+    color: #FFF4E0;
+    font-size: 1.8vh;
+    border-bottom: 2px solid #f7f7f7;;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 2.5vh;
+    transition: ease 0.5s;
+    outline:none
+}
+
+
+
+.character-select:hover {
+    border-bottom: 2px solid #FFF4E0;
+    transition: all 0.2s ease;
+    outline:none
+}
+
+.character-creation-buttons {
+    position: relative;
+    bottom: 1vh;
+    left: 17%;
+}
+
+.create-button {
+    position: relative;
+    transition: ease 0.2s;
+    padding: 2vh;
+    margin-bottom: 3.5vh;
+    font-size: 1.3vh;
+    font-weight: 400;
+    width: 20vh;
+    color: #FFF4E0;
+    outline: none;
+    border: none;
+    transition: ease 0.5s;
+    background-color: #4CAF50;
+    text-align: center;
+}
+
+.create-button:hover {
+    background-color: #81C784;
+}
+
+.close-button {
+    position: relative;
+    transition: ease 0.2s;
+    padding: 2vh;
+    margin-bottom: 3.5vh;
+    font-size: 1.3vh;
+    font-weight: 400;
+    width: 20vh;
+    color: #FFF4E0;
+    outline: none;
+    border: none;
+    transition: ease 0.5s;
+    background-color: #E53935;
+    text-align: center;
+}
+
+.close-button:hover {
+    background-color: #E57373;
+}
+
+#hidden {
+    display: none;
+}
+
+.server-stats {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 2vh;
+    background-color:rgba(0, 0, 0, 0.8);
+    margin: 2vh;
+    border-left: 4px solid #00ADB5;
+}
+
+.character-delete {
+    display: none;
+    position: fixed;
+    width: 500px;
+    height: 21vh;
+    top: 35vh;
+    left: 65vh; 
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    color: #FFF4E0;
+    overflow: visible !important;
+}
+
+.character-delete-cont {
+    padding: 2vh;
+}
+
+.character-delete-buttons {
+    padding-top: 2vh;
+}
+
+.char-remove {
+    padding: 2vh;
+    background-color: #4CAF50;
+    transition: ease 0.5s;
+    margin-bottom: 1.5vh;
+}
+
+.char-remove-cancel {
+    padding: 2vh;
+    background-color: #E53935;
+    transition: ease 0.5s;
+    margin-bottom: 2vh;
+}
+
+.char-remove:hover {
+    background-color: #81C784;
+}
+
+.char-remove-cancel:hover {
+    background-color: #E57373;
+}
