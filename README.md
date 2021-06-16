@@ -1,2 +1,2 @@
 # mbl-character
-Multicharacter, raid clothes, interact
+Multicharacter, raid clothes, interact, ui, nv-selector
